@@ -37,7 +37,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 72px 0 72px;
+    /* background: rgb(234 228 227 / 80%); */
+    background: #EBE2E0;
+    height: 50px;
+    z-index: 15;
+    animation-name: show-nav;
+    animation-duration: 1s;
+}
+
+@keyframes show-nav {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
 }
 
 .tel-number {
