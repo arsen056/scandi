@@ -14,6 +14,15 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({ scrollTop: top }, 1500);
     });
+    
+    window.onscroll = function showHeader() {
+        const header = document.querySelector('.nav');
 
+        if(window.pageYOffset > 600) {
+            header.classList.add('nav-fixed')
+        } else {
+            header.classList.remove('nav-fixed')
+        }
+    }
 });
 
