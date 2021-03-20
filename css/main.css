@@ -121,12 +121,12 @@ header {
     align-items: center;
     margin-right: 70px;
 }
-
-.logo span {
-    text-transform: uppercase;
-    text-decoration: none;
+.nav-logo-box {
     color: #533738;
+    text-transform: uppercase;
+    text-decoration: none; 
 }
+
 
 @media (max-width: 1199px) {
 	.logo {
