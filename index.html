@@ -13,12 +13,15 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <nav class="nav" id="nav">
-                <div class="logo">
-                    <img src="img/logo.png" alt=""><span>Scandi</span>
-                </div>
+                <a href="#header">
+                    <div class="logo">
+                        <img src="img/logo.png" alt=""><span>Scandi</span>
+                    </div>
+                </a>
+
                 <a href="#about-us" class="nav-link">О компании</a>
                 <a href="#our-work" class="nav-link">Портфолио</a>
                 <a href="#team" class="nav-link">Команда</a>
@@ -40,22 +43,26 @@
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <section class="about-us" id="about-us">
-                <h2 class="section-title">О нас</h2>
-                <div class="about-us-content">
-                    <img src="img/cutlery.jpg" alt="Столовые приборы">
-                    <div class="about-us-text">
-                        <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива.
-                            Создавать неповторимые интерьеры для наших дорогих<br> клиентов, уделяя внимание мельчайшим
-                            деталям — вот то, что по-настоящему вдохновляет дизайнеров нашей студии.</p>
+        <section class="about-us" id="about-us">
+            <div class="container">
+                <div class="about-us-box" id="about-us-box">
+                    <h2 class="section-title">О нас</h2>
+                    <div class="about-us-content">
+                        <div class="about-us-img"><img src="img/cutlery.jpg" alt="Столовые приборы"></div>
+                        <div class="about-us-text">
+                            <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива.
+                                Создавать неповторимые интерьеры для наших дорогих<br> клиентов, уделяя внимание
+                                мельчайшим
+                                деталям — вот то, что по-настоящему вдохновляет дизайнеров нашей студии.</p>
 
-                        <p><br>Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
-                            « Да! Это именно то, что действительно достойно моего дома!»</p>
+                            <p><br>Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно
+                                сказать:
+                                « Да! Это именно то, что действительно достойно моего дома!»</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="statistics-bg">
             <div class="container">
                 <div class="statistic">
@@ -254,9 +261,10 @@
                         <input type="form-input" type="text" name="name" id="input_name" placeholder="Ваше имя">
                         <input type="form-input" type="tel" name="number" id="input_number"
                             placeholder="Введите телефон">
-                        <a href="" class="btn-application">Оставить заявку</a>
+                        <button type="submit" class="btn-application">Оставить заявку</button>
                     </form>
-                    <div class="location"><iframe
+                    <div class="location">
+                        <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11866.455074343658!2d48.3278554785889!3d41.96563032164592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4049c8e7514ca983%3A0xc47abf15d9863235!2z0YXQvtC30YLQvtCy0LDRgA!5e0!3m2!1sru!2sru!4v1615654733360!5m2!1sru!2sru"
                             width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
